@@ -1,0 +1,28 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.coiled.io/user_guide/rest-api.html
+docs: https://docs.coiled.io/user_guide/setup/tokens.html
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  oauth2_flows: []
+schemes:
+  - name: ApiToken
+    type: apiKey
+    in: header
+    parameter_name: Authorization
+    format: "Authorization: ApiToken $COILED_API_TOKEN"
+    description: >-
+      Coiled's REST API and Python client authenticate with a static API token.
+      The token is sent in the HTTP Authorization header using the custom
+      "ApiToken" scheme (not Bearer). Tokens are created at
+      https://cloud.coiled.io/profile or via `coiled login`.
+    token_creation: https://cloud.coiled.io/profile
+    sources: [docs]
+storage:
+  - method: cli
+    value: coiled login --token <your-token>
+  - method: env_var
+    value: DASK_COILED__TOKEN
+  - method: config_file
+    value: ~/.config/dask/coiled.yaml
