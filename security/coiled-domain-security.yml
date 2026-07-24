@@ -1,0 +1,16 @@
+generated: '2026-07-18'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: coiled.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 10 12:40:22 2026 GMT
+  hsts: false
+domains:
+- domain: coiled.io
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none

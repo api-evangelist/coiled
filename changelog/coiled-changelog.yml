@@ -1,0 +1,35 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.coiled.io/user_guide/changelog.html
+scheme: semver
+current_version: 1.135.1
+scope: coiled Python client / CLI
+notes: >-
+  Coiled publishes client release notes as a chronological list of semantic
+  versions; individual entries are not dated on the public changelog.
+entries:
+  - version: 1.135.1
+    highlights: Removed internal logging that was no longer utilized.
+  - version: 1.135.0
+    breaking: false
+    highlights: >-
+      Bug fix for handling git+https://... packages in requirements files,
+      preventing misidentification as local packages.
+  - version: 1.134.1
+    highlights: >-
+      Improved progress display for `coiled batch` file uploads and connection
+      retry logic during workspace configuration loading.
+  - version: 1.134.0
+    highlights: >-
+      Added support for `coiled batch run --max-retries N` to automatically
+      retry failed tasks.
+  - version: 1.133.2
+    highlights: >-
+      Introduced `coiled.package_sync.always_upload` configuration setting for
+      forcing re-upload of local packages.
+  - version: 1.133.1
+    highlights: Enhanced transient error handling when polling cluster state during creation.
+  - version: 1.133.0
+    highlights: >-
+      Added GPU AMI option and Docker shared memory size configuration for
+      batch operations.

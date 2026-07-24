@@ -1,0 +1,18 @@
+generated: '2026-07-18'
+method: searched
+source: https://pypi.org/project/coiled/
+packages:
+  - language: python
+    registry: pypi
+    name: coiled
+    url: https://pypi.org/project/coiled/
+    install: pip install coiled
+    version: 1.135.1
+    summary: Python client for coiled.io dask clusters
+    requires_python: ">=3.9"
+    official: true
+    provides_cli: true
+    notes: >-
+      First-party Python client library for Coiled. Ships the `coiled` CLI
+      entry point and the Python API (coiled.Cluster, coiled.function,
+      coiled.batch, coiled.create_software_environment, etc.).

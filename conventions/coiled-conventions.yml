@@ -1,0 +1,32 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.coiled.io/user_guide/rest-api.html
+description: >-
+  Cross-cutting request/response semantics for the Coiled REST API. Coiled is
+  primarily consumed through its first-party Python client and CLI; the REST
+  surface is small (batch job submission) and token-authenticated.
+authentication:
+  style: api-key-header
+  header: Authorization
+  format: "ApiToken $COILED_API_TOKEN"
+  ref: authentication/coiled-authentication.yml
+base_url: https://cloud.coiled.io/api/v2/
+transport:
+  protocol: https
+  content_type: application/json
+idempotency:
+  supported: false
+  notes: No documented idempotency-key mechanism on the REST surface.
+pagination:
+  documented: false
+versioning:
+  api_scheme: uri-path
+  api_current: v2
+  client_scheme: semver
+  client_current: 1.135.1
+  changelog: changelog/coiled-changelog.yml
+error_handling:
+  ref: null
+  notes: No RFC 9457 problem+json envelope documented for the REST surface.
+rate_limits:
+  documented: false

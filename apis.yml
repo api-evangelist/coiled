@@ -1,8 +1,28 @@
 aid: coiled
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/coiled.png
 name: Coiled
-description: 'Coiled is a company surfaced as a portfolio company of bessemer-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: ai-ml. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Coiled is a lightweight cloud compute platform that lets Python developers scale
+  their code to thousands of cloud machines without managing Kubernetes, Docker, or
+  infrastructure. Built by the maintainers of Dask, Coiled provisions cloud VMs and
+  Dask clusters in a user's own AWS, GCP, or Azure account, automatically replicates
+  the local software environment, runs the work across large clusters, and tears the
+  resources back down when finished. It powers Dask clusters, serverless functions,
+  batch jobs, hosted Jupyter notebooks, and interactive CLI jobs, and exposes a
+  first-party Python client, a `coiled` command-line interface, and a token-authenticated
+  REST API. Coiled was surfaced as a portfolio company of Bessemer Venture Partners.
 url: https://raw.githubusercontent.com/api-evangelist/coiled/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +32,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Ai Ml
-apis: []
+- Cloud Computing
+- Data Science
+- Dask
+- Python
+- Distributed Computing
+- Machine Learning
+- Serverless
+apis:
+- name: Coiled Batch REST API
+  description: >-
+    Token-authenticated REST API for submitting Coiled batch jobs (single job
+    scripts) to run on cloud VMs and Dask clusters.
+  humanURL: https://docs.coiled.io/user_guide/rest-api.html
+  baseURL: https://cloud.coiled.io/api/v2/
+  properties:
+  - type: Documentation
+    url: https://docs.coiled.io/user_guide/rest-api.html
+  - type: Authentication
+    url: authentication/coiled-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +63,54 @@ maintainers:
 common:
 - type: Website
   url: https://coiled.io
+- type: DeveloperPortal
+  url: https://docs.coiled.io/index.html
+- type: Documentation
+  url: https://docs.coiled.io/index.html
+- type: APIReference
+  url: https://docs.coiled.io/user_guide/api.html
+- type: GettingStarted
+  url: https://docs.coiled.io/user_guide/setup/index.html
+- type: Blog
+  url: https://docs.coiled.io/blog/index.html
+- type: Pricing
+  url: https://www.coiled.io/pricing
+- type: SignUp
+  url: https://cloud.coiled.io/signup
+- type: Login
+  url: https://cloud.coiled.io/login
+- type: TermsOfService
+  url: https://www.coiled.io/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.coiled.io/privacy-policy
+- type: Support
+  url: https://www.coiled.io/contact
+- type: GitHubOrganization
+  url: https://github.com/coiled
+- type: ChangeLog
+  url: https://docs.coiled.io/user_guide/changelog.html
+- type: ChangeLog
+  url: changelog/coiled-changelog.yml
+- type: Authentication
+  url: authentication/coiled-authentication.yml
+- type: Conventions
+  url: conventions/coiled-conventions.yml
+- type: Packages
+  url: packages/coiled-packages.yml
+- type: SDKs
+  url: packages/coiled-packages.yml
+- type: CLI
+  url: cli/coiled-cli.yml
+- type: LLMsTxt
+  url: llms/coiled-llms.txt
+- type: TrustCenter
+  url: https://www.coiled.io/security
+- type: Compliance
+  url: https://www.coiled.io/security
+- type: DomainSecurity
+  url: security/coiled-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

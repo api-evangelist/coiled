@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.coiled.io/security
+url: https://www.coiled.io/security
+certifications:
+  - SOC 2 Type II
+  - ISO 27001
+partnerships:
+  - AWS Well-Architected Partner
+contact: hello@coiled.io
+evidence:
+  - source: https://www.coiled.io/security
+    quote: >-
+      SOC 2 Type II and ISO-27001 compliant as well an AWS Well-Architected
+      Partner. Organizations can reach out to hello@coiled.io to see evidence
+      of the security certifications.
+notes: >-
+  Public security page states compliance posture and a security contact; no
+  dedicated trust-center portal or published responsible-disclosure program was
+  found.

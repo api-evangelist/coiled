@@ -1,0 +1,145 @@
+# Coiled Documentation
+
+Coiled is a platform that enables Python developers to execute code at scale without requiring deep cloud expertise. It leverages Dask for parallel computing, allowing users to process large datasets, perform machine learning tasks, and run serverless functions efficiently.
+
+## Overview
+
+- [Introduction](https://docs.coiled.io/user_guide/index.html)
+- [Why Coiled?](https://docs.coiled.io/user_guide/why.html)
+- [Get Started](https://docs.coiled.io/user_guide/setup/index.html)
+- [AWS](https://docs.coiled.io/user_guide/setup/aws/index.html)
+- [Automatic Setup](https://docs.coiled.io/user_guide/setup/aws/cli.html)
+- [Customize Setup](https://docs.coiled.io/user_guide/setup/aws/customize-setup.html)
+- [Bring Your Own Network](https://docs.coiled.io/user_guide/setup/aws/byo-network.html)
+- [Configure Firewalls](https://docs.coiled.io/user_guide/setup/aws/firewalls.html)
+- [Limit Coiled’s Access to AWS Resources](https://docs.coiled.io/user_guide/setup/aws/limit-aws-iam.html)
+- [Tracking AWS resources](https://docs.coiled.io/user_guide/setup/aws/tracking-resources.html)
+- [Reference](https://docs.coiled.io/user_guide/setup/aws/reference.html)
+- [GCP](https://docs.coiled.io/user_guide/setup/gcp/index.html)
+- [Automatic Setup](https://docs.coiled.io/user_guide/setup/gcp/cli.html)
+- [Customize Setup](https://docs.coiled.io/user_guide/setup/gcp/customize-setup.html)
+- [Manual Setup](https://docs.coiled.io/user_guide/setup/gcp/manual.html)
+- [Bring Your Own Network](https://docs.coiled.io/user_guide/setup/gcp/byo-network.html)
+- [Configure Firewalls](https://docs.coiled.io/user_guide/setup/gcp/firewalls.html)
+- [Reference](https://docs.coiled.io/user_guide/setup/gcp/reference.html)
+- [Azure](https://docs.coiled.io/user_guide/setup/azure/index.html)
+- [Automatic Setup](https://docs.coiled.io/user_guide/setup/azure/cli.html)
+- [Known Limitations](https://docs.coiled.io/user_guide/setup/azure/limitations.html)
+- [Reference](https://docs.coiled.io/user_guide/setup/azure/reference.html)
+- [Need a cloud provider account?](https://docs.coiled.io/user_guide/setup/no-cloud-provider.html)
+- [Reference](https://docs.coiled.io/user_guide/setup/reference.html)
+- [Bring Your Own Network](https://docs.coiled.io/user_guide/setup/byo-network.html)
+- [Configure Firewalls](https://docs.coiled.io/user_guide/setup/firewalls.html)
+- [Network Architecture](https://docs.coiled.io/user_guide/setup/network-architecture.html)
+- [API Tokens](https://docs.coiled.io/user_guide/setup/tokens.html)
+
+## Tools
+
+- [Batch Jobs](https://docs.coiled.io/user_guide/batch.html)
+- [Serverless Functions](https://docs.coiled.io/user_guide/functions.html)
+- [Dask Clusters](https://docs.coiled.io/user_guide/dask.html)
+- [Jupyter Notebooks](https://docs.coiled.io/user_guide/notebooks.html)
+- [Prefect](https://docs.coiled.io/user_guide/prefect.html)
+- [Interactive CLI Jobs](https://docs.coiled.io/user_guide/cli-jobs.html)
+- [REST API](https://docs.coiled.io/user_guide/rest-api.html)
+- [MPI](https://docs.coiled.io/user_guide/mpi.html)
+- [Other Integrations](https://docs.coiled.io/user_guide/integrations.html)
+
+## How do I ...
+
+- [Manage Hardware](https://docs.coiled.io/user_guide/clusters/index.html)
+- [VM Size and Type](https://docs.coiled.io/user_guide/clusters/size-and-type.html)
+- [Software Environment](https://docs.coiled.io/user_guide/clusters/software.html)
+- [Region](https://docs.coiled.io/user_guide/clusters/region.html)
+- [ARM](https://docs.coiled.io/user_guide/clusters/arm.html)
+- [GPUs](https://docs.coiled.io/user_guide/clusters/gpu.html)
+- [Scale](https://docs.coiled.io/user_guide/clusters/scale.html)
+- [API](https://docs.coiled.io/user_guide/clusters/api.html)
+- [Reference](https://docs.coiled.io/user_guide/clusters/reference.html)
+- [Environment Variables](https://docs.coiled.io/user_guide/clusters/environ.html)
+- [Reuse](https://docs.coiled.io/user_guide/clusters/reuse.html)
+- [Single-Threaded Workers](https://docs.coiled.io/user_guide/clusters/single-threaded.html)
+- [Worker and Scheduler Options](https://docs.coiled.io/user_guide/clusters/worker-scheduler-options.html)
+- [Idle Shutdown](https://docs.coiled.io/user_guide/costs/idle.html)
+- [Manage Software](https://docs.coiled.io/user_guide/software/index.html)
+- [Package Sync (default)](https://docs.coiled.io/user_guide/software/sync.html)
+- [Best Practices](https://docs.coiled.io/user_guide/software/package_sync_best_practices.html)
+- [Advanced Usage](https://docs.coiled.io/user_guide/software/package-sync-advanced.html)
+- [Limitations](https://docs.coiled.io/user_guide/software/package_sync_limitations.html)
+- [Compatibility](https://docs.coiled.io/user_guide/software/package_sync_compatibility.html)
+- [Production Use](https://docs.coiled.io/user_guide/software/package_sync_production.html)
+- [Manual Software Environments](https://docs.coiled.io/user_guide/software/manual.html)
+- [Docker](https://docs.coiled.io/user_guide/software/docker.html)
+- [Manage Users](https://docs.coiled.io/user_guide/users/index.html)
+- [Manage Costs](https://docs.coiled.io/user_guide/costs/index.html)
+- [Spot Instances](https://docs.coiled.io/user_guide/costs/spot.html)
+- [Tags](https://docs.coiled.io/user_guide/costs/tags.html)
+- [Get Help](https://docs.coiled.io/user_guide/support.html)
+
+## Data
+
+- [Filestores](https://docs.coiled.io/user_guide/data/filestores.html)
+- [Access Remote Data](https://docs.coiled.io/user_guide/data/remote-data-access.html)
+
+## Comparisons
+
+- [Coiled vs ...](https://docs.coiled.io/user_guide/vs.html)
+- [Dask Deployment](https://docs.coiled.io/user_guide/dask-deployment-comparisons.html)
+
+## Reference
+
+- [API](https://docs.coiled.io/user_guide/api.html)
+- [Best Practices](https://docs.coiled.io/user_guide/best-practices.html)
+- [Troubleshooting](https://docs.coiled.io/user_guide/troubleshoot.html)
+- [Logging](https://docs.coiled.io/user_guide/logging.html)
+- [Performance Reports](https://docs.coiled.io/user_guide/performance-reports.html)
+- [How to SSH into your cluster](https://docs.coiled.io/user_guide/ssh.html)
+- [Memory Pressure on Dask Clusters](https://docs.coiled.io/user_guide/restart-dask-workers.html)
+- [Scheduler Running Out of Memory](https://docs.coiled.io/user_guide/scheduler-oom.html)
+- [Automatic Shutdown](https://docs.coiled.io/user_guide/shutdown.html)
+- [Release Notes](https://docs.coiled.io/user_guide/release_notes.html)
+- [Coiled Cloud Release Notes](https://docs.coiled.io/user_guide/cloud_changelog.html)
+- [Coiled Client Release Notes](https://docs.coiled.io/user_guide/changelog.html)
+- [Environment Variables](https://docs.coiled.io/user_guide/environment-variables.html)
+- [Configuration](https://docs.coiled.io/user_guide/reference/configuration.html)
+- [Data Privacy](https://docs.coiled.io/user_guide/reference/analytics-privacy.html)
+- [Pricing](https://www.coiled.io/pricing)
+- [Build vs Buy](https://coiled.io/build-vs-buy)
+- [Security](https://coiled.io/security)
+- [FAQ](https://www.coiled.io/faq)
+
+## DataFrames
+
+- [DataFrame workflows](https://docs.coiled.io/examples/dataframes.html)
+- [Exploratory analysis with cloud Parquet and Dask DataFrame](https://docs.coiled.io/examples/uber-lyft.html)
+- [DuckDB with Serverless Functions](https://docs.coiled.io/examples/duckdb-queries-cloud-coiled.html)
+- [Interactive data visualization with Dask and Datashader](https://docs.coiled.io/examples/datashader.html)
+
+## Machine Learning
+
+- [Machine learning with Coiled](https://docs.coiled.io/examples/ml.html)
+- [Scale XGBoost training with Dask](https://docs.coiled.io/examples/scaling-xgboost-cloud-coiled.html)
+- [Parallel hyperparameter optimization with Dask](https://docs.coiled.io/examples/hpo.html)
+- [GPU PyTorch with Batch Jobs](https://docs.coiled.io/examples/gpu-job.html): Run GPU-accelerated PyTorch scripts on cloud machines with one line of code. Train neural networks 42x faster on NVIDIA GPUs compared to CPU. Simple deployment from laptop to cloud GPU.
+- [Distributed training with Accelerate](https://docs.coiled.io/examples/distributed-training-accelerate.html)
+- [GPU PyTorch with Serveless Functions](https://docs.coiled.io/examples/pytorch.html)
+- [Experiment tracking with MLflow](https://docs.coiled.io/examples/mlops-with-mlflow.html)
+- [Run MLflow on Coiled](https://docs.coiled.io/examples/run-mlflow-on-coiled.html)
+
+## Geospatial
+
+- [Geospatial workflows with Coiled](https://docs.coiled.io/examples/geospatial.html)
+- [Analyze 6TB of Zarr data with Xarray and Dask](https://docs.coiled.io/examples/scaling-xarray-cloud-coiled.html)
+- [Non-Python jobs with Batch Jobs](https://docs.coiled.io/examples/batch-gdal.html): Run non-Python jobs on the cloud with Coiled Batch. Process 3000+ satellite images 60x faster using GDAL and parallel cloud computing. Execute any CLI tool or script in parallel across multiple machines.
+- [Schedule jobs with Prefect and Serverless Functions](https://docs.coiled.io/examples/prefect-scheduled-jobs.html)
+
+## General Python
+
+- [General computing with Coiled](https://docs.coiled.io/examples/futures.html)
+- [Hello world](https://docs.coiled.io/examples/hello-world.html)
+- [Estimate pi with parallel Serverless Functions](https://docs.coiled.io/examples/pi.html)
+- [Process files on S3 with Dask](https://docs.coiled.io/examples/arxiv-matplotlib.html)
+
+## Additional Resources
+
+- [Blog](https://docs.coiled.io/blog/index.html): Monthly updates on Dask + Coiled.

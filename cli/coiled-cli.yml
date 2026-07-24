@@ -1,0 +1,56 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.coiled.io/user_guide/api.html
+name: coiled
+description: >-
+  First-party command-line interface for Coiled, shipped inside the `coiled`
+  PyPI package. Used to authenticate, provision cloud VMs and Dask clusters,
+  manage software environments, and submit batch jobs from a local shell.
+binary: coiled
+install:
+  - method: pip
+    command: pip install coiled
+  - method: conda
+    command: conda install -c conda-forge coiled
+auth:
+  command: coiled login
+  token_flag: coiled login --token <your-token>
+  env_var: DASK_COILED__TOKEN
+  config_file: ~/.config/dask/coiled.yaml
+command_groups:
+  - group: login
+    commands:
+      - coiled login
+  - group: run
+    description: Execute a command or script on a cloud VM
+    commands:
+      - coiled run
+  - group: batch
+    description: Submit and manage batch jobs
+    commands:
+      - coiled batch run
+  - group: cluster
+    description: Manage Dask clusters
+    commands:
+      - coiled cluster list
+      - coiled cluster ssh
+      - coiled cluster logs
+  - group: env
+    description: Build and manage software environments
+    commands:
+      - coiled env create
+      - coiled env delete
+      - coiled env list
+      - coiled env inspect
+  - group: notebook
+    description: Launch and stop hosted notebook sessions
+    commands:
+      - coiled notebook start
+      - coiled notebook stop
+key_flows:
+  - name: Authenticate
+    steps: [coiled login]
+  - name: Run a script on a cloud VM
+    steps: [coiled login, coiled run]
+  - name: Submit a batch job
+    steps: [coiled login, coiled batch run]
