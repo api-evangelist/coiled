@@ -2,6 +2,13 @@
   "repo": "coiled",
   "feeds": [
     {
+      "source": "https://docs.coiled.io/blog/atom.xml",
+      "feed_url": "https://docs.coiled.io/blog/atom.xml",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
       "source": "https://docs.coiled.io/user_guide/setup/index.html",
       "feed_url": "https://docs.coiled.io/blog/atom.xml",
       "title": "",
@@ -9,6 +16,6 @@
       "method": "discovered"
     }
   ],
-  "post_count": 0,
-  "fetched": "2026-07-20T13:31:34Z"
+  "post_count": 50,
+  "fetched": "2026-08-01T15:49:00Z"
 }
