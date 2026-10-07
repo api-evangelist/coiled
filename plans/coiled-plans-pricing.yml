@@ -1,0 +1,90 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://coiled.io/pricing
+sources:
+- https://coiled.io/pricing
+- https://www.coiled.io/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: developer-api
+pricing_basis: tiered-subscription
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+  managed_tier: Basic
+published: true
+note: Tiered plans with monthly usage allowances plus per-hour platform usage rates billed by the second;
+  compute runs in the customer's own cloud account billed by the cloud provider.
+plan_count: 10
+currency: USD
+plans:
+- name: Free
+  price_text: $25 usage/month
+  price: 25
+  currency: USD
+  period: month
+  unit: usage allowance
+  included_quota: 1 seat, 1 workspace, $25 usage/month, Package sync or Docker
+  overage: No additional usage; The Free tier has no overages—when you hit the limit, you'll need to upgrade
+    to keep running jobs.
+- name: Basic
+  price_text: $100/month
+  price: 100
+  currency: USD
+  period: month
+  unit: plan
+  included_quota: 2 seats, 1 workspace, $100 usage/month
+  overage: overages are billed at $0.05 per CPU-hour and the appropriate per-hour cost GPUs
+- name: Professional
+  price_text: $500/month
+  price: 500
+  currency: USD
+  period: month
+  unit: plan
+  included_quota: 6 seats, 3 workspaces, $500 usage/month, Custom Networking, Private PyPI, Spot/ARM
+  overage: overages are billed at $0.05 per CPU-hour and the appropriate per-hour cost GPUs
+- name: Enterprise
+  price_text: Contact us
+  period: none
+  included_quota: Custom seats, custom workspaces, usage volume discounts, SSO, Field Engineer
+  overage: Usage volume discounts
+- name: Platform Cost - CPU
+  price_text: $0.05 / CPU-hour
+  price: 0.05
+  currency: USD
+  period: per-use
+  unit: CPU-hour
+- name: Platform Cost - Nvidia T4
+  price_text: $0.15 / hour
+  price: 0.15
+  currency: USD
+  period: per-use
+  unit: hour
+- name: Platform Cost - Nvidia L4
+  price_text: $0.25 / hour
+  price: 0.25
+  currency: USD
+  period: per-use
+  unit: hour
+- name: Platform Cost - Nvidia A10G
+  price_text: $0.45 / hour
+  price: 0.45
+  currency: USD
+  period: per-use
+  unit: hour
+- name: Platform Cost - Nvidia L40S
+  price_text: $0.65 / hour
+  price: 0.65
+  currency: USD
+  period: per-use
+  unit: hour
+- name: Platform Cost - Nvidia A100
+  price_text: $1.00 / hour
+  price: 1
+  currency: USD
+  period: per-use
+  unit: hour
